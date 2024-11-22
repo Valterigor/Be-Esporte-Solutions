@@ -3,20 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Melhorando a compatibilidade com dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BE Esporte Solutions</title>
     <link rel="stylesheet" href="index.css">
-    
     <!-- Meta descrição para SEO -->
     <meta name="description" content="A BE Esporte oferece serviços personalizados para iniciantes e atletas de alta performance. Conheça nossos profissionais e soluções.">
-    
     <!-- Ícones para diferentes plataformas -->
     <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
-    
-    <!-- Tags adicionais de SEO para redes sociais (opcional) -->
-    <meta property="og:title" content="BE Esporte Solutions">
-    <meta property="og:description" content="A BE Esporte oferece serviços personalizados para iniciantes e atletas de alta performance. Conheça nossos profissionais e soluções.">
 </head>
 
 <body>
@@ -38,15 +32,58 @@
     
     <main>
         <section class="services">
-            <h3>Equipe</h3>
-            <ul>
-                <li>Fotógrafo</li>
-                <li>Personal Trainer</li>
-                <li>Personal Soccer</li>
-                <li>Nutricionista</li>
-                <li>Psicóloga(o)</li>
-            </ul>
+            <h3>Serviços</h3>
+            <div class="service-buttons">
+                <button class="service-btn">Fotógrafo</button>
+                <button class="service-btn">Personal Trainer</button>
+                <button class="service-btn">Personal Soccer</button>
+                <button class="service-btn">Nutricionista</button>
+                <button class="service-btn">Psicóloga(o)</button>
+            </div>
         </section>
+    </main>
+    
+    <style>
+        /* Estilos gerais */
+        .services {
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .services h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    
+        /* Estilos para os botões */
+        .service-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    
+        .service-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+    
+        .service-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    
+        .service-btn:focus {
+            outline: none;
+        }
+    </style>
+    
 
         <section class="performance">
             <h4>Iniciantes</h4>
@@ -68,4 +105,3 @@
 </body>
 
 </html>
-
